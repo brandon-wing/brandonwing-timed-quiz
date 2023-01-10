@@ -6,15 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brandon's Quiz</title>
     <link rel="stylesheet" href="./assets/style.css">
-    <script src="script.js"></script>
+
 </head>
 <body>
-    <div class="homecontainer">
-        <h1 class="hometitle">Timed Quiz: Test your Knowledge!</h1>
-        <p class="descript"> Click below to answer a series of multiple choice questions to test your knowledge!</p>
-        <p class="descript">Answer correctly before the time runs out! Incorrect answers will deduct time!</p>
-        <a href="timedquiz.html"><button class="btn" id ="start" >Start Quiz</button></a>
-        <a href="hiscores.html"><button class="btn" id ="hiscores">HighScores</button></a>
+    <div class="container">
+        <div id="homepage" class="homeclass">
+            <h1>TIMED QUIZ: TEST YOUR KNOWLEDGE</h1>
+            <p>Answer a series of questions before the time runs out!</p>
+            <p>Be careful! Wrong answers will deduct time from the clock!</p>
+            <p>Click the button below to begin!</p>
+            <div class="buttons">
+            <a href="timedquiz.html" class="btn" id="playbtn">Take Quiz</a>
+            <a href="hiscores.html" class="btn" id="hiscorebtn">Hiscores</a>               
+        </div>
+        </div>
     </div>
+    <script src="./assets/script.js"></script>
 </body>
 </html>
