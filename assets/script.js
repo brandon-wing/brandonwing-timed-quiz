@@ -44,7 +44,8 @@ const questions = [
 ]
 
 //Next, time for DOM elements
-const beginEl = document.getElementById("beginquiz")
+const beginEl = document.getElementById("playbtn")
+const hiscoresEl = document.getElementById("hiscores")
 const questionEl = document.getElementById("question")
 const optionOneEl = document.getElementById("option-one")
 const optionTwoEl = document.getElementById("option-two")
