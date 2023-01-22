@@ -54,3 +54,17 @@ margin-top: 10px;
 .hide{
     display: none;
 }
+
+.option{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin: 0 auto;
+text-align: center;
+width: 100px;
+height: 40px;
+border: 5px solid black;
+background-color: blueviolet;
+margin-top: 10px;
+}

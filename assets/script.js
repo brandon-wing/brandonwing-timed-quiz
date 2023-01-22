@@ -44,11 +44,34 @@ const questions = [
 ]
 
 //Next, time for DOM elements
-const beginEl = document.getElementById("playbtn")
-const hiscoresEl = document.getElementById("hiscores")
-const questionEl = document.getElementById("question")
-const optionOneEl = document.getElementById("option-one")
-const optionTwoEl = document.getElementById("option-two")
-const optionThreeEl = document.getElementById("option-three")
-const optionFourEl = document.getElementById("option-four")
-const timerEl = document.getElementById("timer")
+const homepageEl = document.querySelector("#homepage")
+const quizpageEl = document.querySelector("#quiz")
+const beginEl = document.querySelector("#playbtn")
+const hiscoresEl = document.querySelector("#hiscores")
+const questionEl = document.querySelector("#question")
+const optionOneEl = document.querySelector("#A")
+const optionTwoEl = document.querySelector("#B")
+const optionThreeEl = document.querySelector("#C")
+const optionFourEl = document.querySelector("#D")
+const timerEl = document.querySelector("#timer")
+
+//start button should remove display of homepage
+
+beginEl.addEventListener("click", startQuiz)
+
+function startQuiz() {
+homepageEl.style.display = "none";
+quizpageEl.style.display = "block";
+showQuestion();
+}
+
+let questionNumber = 0
+
+function showQuestion(){
+let show = questions[questionNumber]
+questionEl.textContent = show.q;
+optionOneEl.textContent = show.a;
+optionTwoEl.textContent = show.b;
+optionThreeEl.textContent = show.c;
+optionFourEl.textContent = show.d;
+}
